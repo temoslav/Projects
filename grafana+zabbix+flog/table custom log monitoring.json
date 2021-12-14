@@ -1,0 +1,102 @@
+{
+  "id": 10,
+  "gridPos": {
+    "h": 8,
+    "w": 12,
+    "x": 0,
+    "y": 0
+  },
+  "type": "table",
+  "title": "My custom generated logs",
+  "pluginVersion": "8.3.2",
+  "fieldConfig": {
+    "defaults": {
+      "custom": {
+        "align": "auto",
+        "displayMode": "auto"
+      },
+      "thresholds": {
+        "mode": "absolute",
+        "steps": [
+          {
+            "color": "green",
+            "value": null
+          },
+          {
+            "color": "red",
+            "value": 80
+          }
+        ]
+      },
+      "mappings": []
+    },
+    "overrides": []
+  },
+  "options": {
+    "showHeader": true,
+    "footer": {
+      "show": false,
+      "reducer": [
+        "sum"
+      ],
+      "fields": ""
+    },
+    "sortBy": [
+      {
+        "desc": true,
+        "displayName": "Time"
+      }
+    ]
+  },
+  "targets": [
+    {
+      "application": {
+        "filter": ""
+      },
+      "datasource": {
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "nCaH1s27k"
+      },
+      "functions": [],
+      "group": {
+        "filter": "Zabbix servers"
+      },
+      "host": {
+        "filter": "Zabbix server"
+      },
+      "item": {
+        "filter": "mycustomlog monitoring"
+      },
+      "itemTag": {
+        "filter": ""
+      },
+      "options": {
+        "disableDataAlignment": false,
+        "showDisabledItems": false,
+        "skipEmptyValues": false,
+        "useZabbixValueMapping": false
+      },
+      "proxy": {
+        "filter": ""
+      },
+      "queryType": "2",
+      "refId": "A",
+      "resultFormat": "time_series",
+      "table": {
+        "skipEmptyValues": false
+      },
+      "tags": {
+        "filter": ""
+      },
+      "trigger": {
+        "filter": ""
+      },
+      "triggers": {
+        "acknowledged": 2,
+        "count": true,
+        "minSeverity": 3
+      }
+    }
+  ],
+  "datasource": null
+}
